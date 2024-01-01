@@ -6,15 +6,14 @@ Enter your Desired String: kunal
 The Length Of The Above String is : 5
 */
 #include<stdio.h>
+#include<string.h>
 void main(){
-	char alpha[100];
-	printf("Enter your Desired String: ");
-	gets(alpha);
-	char *ptr=alpha;
-	int len=0;
-	while(*ptr != NULL){
-		len++;
-		ptr++;
-	}
-	printf("\nThe Length Of The Above String is : %d",len);
+	int i,n;
+	char a[50];
+	int *ptr;
+	printf("Enter any string : ");
+	gets(a);
+	ptr=&a;
+	ptr=strlen(a);
+	printf("The Length of String is : %d ",ptr);
 }
